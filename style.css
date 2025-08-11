@@ -1,0 +1,209 @@
+* {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+ 
+  
+ 
+}
+body {
+  margin: 10px;
+  padding: auto;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+li {
+    list-style: none;
+  
+}
+
+h3{
+
+}
+
+.git-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.git-link {
+  display: block;
+  padding: 12px 15px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.git-link:hover {
+  background-color: #f6f8fa;
+  transform: translateX(5px);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.git-link:active {
+  background-color: #949191;
+}
+.headlines {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2d333b;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(90deg, #f6f8fa 0%, #ffffff 100%);
+  border-left: 8px solid #2188ff;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.git-cheat-sheet {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.git-cheat-sheet h3 {
+  color: #2188ff;
+  margin-top: 0;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 10px;
+}
+
+.command-card {
+  background: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-left: 4px solid #2188ff;
+  transition: transform 0.2s;
+}
+
+.command-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.command-card code {
+  display: block;
+  font-family: 'Courier New', monospace;
+  background: #f6f8fa;
+  padding: 8px;
+  border-radius: 4px;
+  color: #e36209;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+  .command-card p {
+  margin: 5px 0 0;
+  color: #586069;
+}
+.git-features-container {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  color: #2d333b;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2188ff, #a371f7);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e1e4e8;
+}
+
+.feature-card.highlight {
+  border-top: 4px solid #2188ff;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #2188ff;
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.feature-points {
+  padding-left: 1.2rem;
+  color: #586069;
+  line-height: 1.6;
+}
+
+.feature-points li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.feature-points li::before {
+  content: '•';
+  color: #2188ff;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+footer{
+  background-color:#b9b7b7;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  padding: 1.2rem;
+
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
